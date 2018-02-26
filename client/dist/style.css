@@ -1,0 +1,29 @@
+
+body {
+   color: white;
+   background-image: url("sunset2.jpg");
+   background-repeat: no-repeat;
+   background-position: top;
+   background-color: black;
+   font-family: 'Armata';
+   font-size: 18px;
+ }
+ textarea {
+    position: relative;
+    width: 50%;
+    left: 20em;
+    margin-top: 27.11em;
+  }
+  .rectangle {
+    height: 2000px;
+    width: 1000px;
+    background-color: #FFFF;
+    position: fixed;
+    margin-left: 23em;
+    margin-top: 25.8em;
+  }
+  h1 {
+    position: relative;
+    margin-top: 1.5em;
+    margin-right: 19em;
+  }
