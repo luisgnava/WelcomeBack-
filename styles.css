@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Armata');
+.button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+}
+
+.button1 {
+  color: white;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  left: 110px;
+}
+
+.button2 {
+  color: white;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  left: 120px;
+}
+
+.button3 {
+  color: white;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  left: 130px;
+}
+
+.button4 {
+  color: white;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: relative;
+  left: 865px;
+}
+
+.rectangle {
+  height: 1000px;
+  width: 920px;
+  background-color: #FFFF;
+  position: fixed;
+  margin-left: 8em;
+  margin-top: 12.8em;
+}
+
+h1 {
+  position: relative;
+  margin-top: 1.5em;
+  margin-right: 19em;
+}
+
+p {
+  color: black;
+  font-family: 'Armata';
+  font-size: 25px;
+  position: relative;
+  margin-top: 5em;
+  margin-right: 8.2em;
+}
+
+p2 {
+  color: black;
+  font-family: 'Armata';
+  font-size: 24px;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 8em;
+}
+
+textarea {
+  position: relative;
+  width: 66%;
+  left: 9em;
+  margin-top: -0.11em;
+}
+
+input {
+  position: relative;
+  top: -0.399em;
+  left: 15em;
+}
+
+body {
+  color: white;
+  background-image: url("sunset2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: black;
+  font-family: 'Armata';
+  font-size: 18px;
+}
