@@ -1,0 +1,27 @@
+{
+  "name": "welcomebackp",
+  "version": "1.0.0",
+  "description": "> Welcome Back Paisa",
+  "main": "server/index.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  },
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "react-dev": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgnava/WelcomeBack-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisgnava/WelcomeBack-/issues"
+  },
+  "homepage": "https://github.com/luisgnava/WelcomeBack-#readme"
+}
