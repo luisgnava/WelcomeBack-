@@ -47,6 +47,7 @@
   width: 920px;
   background-color: #FFFF;
   position: fixed;
+  padding-top: 100%;
   margin-left: 8em;
   margin-top: 12.8em;
 }
