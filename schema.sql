@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS paisa;
+
 CREATE DATABASE paisa;
 
 
@@ -11,12 +13,12 @@ CREATE TABLE user(
 );
 
 
-INSERT INTO user(ID,userName) VALUES(1,'rainbowBrony');
-INSERT INTO user(ID,userName) VALUES(2,'theBlackLobo');
-INSERT INTO user(ID,userName) VALUES(3,'emperorCamilo');
-INSERT INTO user(ID,userName) VALUES(4,'codingNerd45');
-INSERT INTO user(ID,userName) VALUES(5,'vatoLoco1');
-INSERT INTO user(ID,userName) VALUES(6,'cleverUser2');
+INSERT INTO user(userName) VALUES('rainbowBrony');
+INSERT INTO user(userName) VALUES('theBlackLobo');
+INSERT INTO user(userName) VALUES('emperorCamilo');
+INSERT INTO user(userName) VALUES('codingNerd45');
+INSERT INTO user(userName) VALUES('vatoLoco1');
+INSERT INTO user(userName) VALUES('cleverUser2');
 
 
 CREATE TABLE comments(
@@ -28,13 +30,13 @@ CREATE TABLE comments(
 );
 
 
-INSERT INTO comments(commentID, comment, userID) VALUES(1,'random questions',1);
-INSERT INTO comments(commentID, comment, userID) VALUES(2,'random questions',2);
-INSERT INTO comments(commentID, comment, userID) VALUES(3,'random questions',3);
-INSERT INTO comments(commentID, comment, userID) VALUES(4,'random questions',6);
-INSERT INTO comments(commentID, comment, userID) VALUES(5,'random questions',5);
-INSERT INTO comments(commentID, comment, userID) VALUES(6,'random questions',4);
 
+INSERT INTO comments(comment, userID) VALUES('random questions',1);
+INSERT INTO comments(comment, userID) VALUES('random questions',2);
+INSERT INTO comments(comment, userID) VALUES('random questions',3);
+INSERT INTO comments(comment, userID) VALUES('random questions',6);
+INSERT INTO comments(comment, userID) VALUES('random questions',5);
+INSERT INTO comments(comment, userID) VALUES('random questions',4);
 
 
 CREATE TABLE reply(
@@ -48,13 +50,12 @@ CREATE TABLE reply(
 );
 
 
-INSERT INTO reply(replyID, reply, userID, commentID) VALUES(1,'random answer',1,1);
-INSERT INTO reply(replyID, reply, userID, commentID) VALUES(2,'random answer',2,2);
-INSERT INTO reply(replyID, reply, userID, commentID) VALUES(3,'random answer',3,3);
-INSERT INTO reply(replyID, reply, userID, commentID) VALUES(4,'random answer',6,4);
-INSERT INTO reply(replyID, reply, userID, commentID) VALUES(5,'random answer',5,5);
-INSERT INTO reply(replyID, reply, userID, commentID) VALUES(6,'random answer',4,6);
-
+INSERT INTO reply(reply, userID, commentID) 'random answer',1,1);
+INSERT INTO reply(reply, userID, commentID) 'random answer',2,2);
+INSERT INTO reply(reply, userID, commentID) 'random answer',3,3);
+INSERT INTO reply(reply, userID, commentID) 'random answer',6,4);
+INSERT INTO reply(reply, userID, commentID) 'random answer',5);
+INSERT INTO reply(reply, userID, commentID) 'random answer',4,6);
 
 
 CREATE TABLE rating(
@@ -67,9 +68,10 @@ CREATE TABLE rating(
 );
 
 
-INSERT INTO rating(ratingID, replyID, commentID) VALUES(1,1,1);
-INSERT INTO rating(ratingID, replyID, commentID) VALUES(2,2,2);
-INSERT INTO rating(ratingID, replyID, commentID) VALUES(3,3,3);
-INSERT INTO rating(ratingID, replyID, commentID) VALUES(4,6,6);
-INSERT INTO rating(ratingID, replyID, commentID) VALUES(5,5,5);
-INSERT INTO rating(ratingID, replyID, commentID) VALUES(6,4,4);
+
+INSERT INTO rating(replyID, commentID) VALUES(1,1);
+INSERT INTO rating(replyID, commentID) VALUES(2,2);
+INSERT INTO rating(replyID, commentID) VALUES(3,3);
+INSERT INTO rating(replyID, commentID) VALUES(6,6);
+INSERT INTO rating(replyID, commentID) VALUES(5,5);
+INSERT INTO rating(replyID, commentID) VALUES(4,4);
