@@ -37,7 +37,7 @@ class AddThread extends React.Component{
            'Add Thread Here'
         </textarea>
         <div>
-          <button onClick={this.add}>Post Thread </button>
+            <button onClick={this.add}>Post Thread </button> 
         </div>
         </div>
 
