@@ -1,8 +1,12 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 
-app.use(express.static(__dirname + '/../client/dist'));
+app.use(bodyParser.json());
+ app.use(express.static(__dirname + '/../client/dist'));
 
-app.listen(3000, function() {
-  console.log('Server started and listening on port 3000');
-});
+//get request
+
+app.listen(3000, ()=>{
+  console.log('listening on 3000')
+})

@@ -1,15 +1,15 @@
-import React from 'react';
+ import React from 'react';
 
 class AddThread extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-     comment:'',
-     userName:''
+     comment:''
+
    }
    this.add = this.add.bind(this);
    this.updateComment = this.updateComment.bind(this);
-   this.updateUserName = this.updateUserName.bind(this);
+
 
   }
   updateComment(e){
@@ -17,27 +17,24 @@ class AddThread extends React.Component{
       comment:e.target.value
     })
   }
-  updateUserName(e){
-    this.setState({
-      userName:e.target.value
-    })
-  }
+
   add(){
-    this.props.addThread(this.state.comment, this.state.UserName)
+    this.props.addThread(this.state.comment)
     this.setState({
-      comment:'',
-      userName:''
+      comment:''
     })
   }
+
   render(){
     return (<div>
 
         <textarea onChange={this.updateComment} value={this.state.comment}>
 
-           'Add Thread Here'
+
         </textarea>
         <div>
-            <button onClick={this.add}>Post Thread </button>
+
+      <button onClick={this.add}>Add Thread </button>
         </div>
         </div>
 

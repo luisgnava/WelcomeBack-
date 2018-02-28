@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS paisa;
 
+=======
+>>>>>>> fixed files and folders
 CREATE DATABASE paisa;
 
 
@@ -13,12 +16,21 @@ CREATE TABLE user(
 );
 
 
+<<<<<<< HEAD
 INSERT INTO user(userName) VALUES('rainbowBrony');
 INSERT INTO user(userName) VALUES('theBlackLobo');
 INSERT INTO user(userName) VALUES('emperorCamilo');
 INSERT INTO user(userName) VALUES('codingNerd45');
 INSERT INTO user(userName) VALUES('vatoLoco1');
 INSERT INTO user(userName) VALUES('cleverUser2');
+=======
+INSERT INTO user(ID,userName) VALUES(1,'rainbowBrony');
+INSERT INTO user(ID,userName) VALUES(2,'theBlackLobo');
+INSERT INTO user(ID,userName) VALUES(3,'emperorCamilo');
+INSERT INTO user(ID,userName) VALUES(4,'codingNerd45');
+INSERT INTO user(ID,userName) VALUES(5,'vatoLoco1');
+INSERT INTO user(ID,userName) VALUES(6,'cleverUser2');
+>>>>>>> fixed files and folders
 
 
 CREATE TABLE comments(
