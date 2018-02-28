@@ -1,6 +1,5 @@
 DROP DATABASE IF EXISTS paisa;
 
-
 CREATE DATABASE paisa;
 
 
@@ -31,13 +30,13 @@ CREATE TABLE comments(
 );
 
 
+
 INSERT INTO comments(comment, userID) VALUES('random questions',1);
 INSERT INTO comments(comment, userID) VALUES('random questions',2);
 INSERT INTO comments(comment, userID) VALUES('random questions',3);
 INSERT INTO comments(comment, userID) VALUES('random questions',6);
 INSERT INTO comments(comment, userID) VALUES('random questions',5);
 INSERT INTO comments(comment, userID) VALUES('random questions',4);
-
 
 
 CREATE TABLE reply(
@@ -50,13 +49,13 @@ CREATE TABLE reply(
   FOREIGN KEY(commentID) REFERENCES comments(commentID)
 );
 
+
 INSERT INTO reply(reply, userID, commentID) 'random answer',1,1);
 INSERT INTO reply(reply, userID, commentID) 'random answer',2,2);
 INSERT INTO reply(reply, userID, commentID) 'random answer',3,3);
 INSERT INTO reply(reply, userID, commentID) 'random answer',6,4);
 INSERT INTO reply(reply, userID, commentID) 'random answer',5);
 INSERT INTO reply(reply, userID, commentID) 'random answer',4,6);
-
 
 
 CREATE TABLE rating(
@@ -67,6 +66,7 @@ CREATE TABLE rating(
   commentID int,
   FOREIGN KEY(commentID) REFERENCES comments(commentID)
 );
+
 
 
 INSERT INTO rating(replyID, commentID) VALUES(1,1);
