@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import AddThread from './components/Thread.jsx';
-import Discussions from './components/Discussions.jsx';
 
 class App extends React.Component{
   constructor(props){
@@ -21,7 +20,7 @@ class App extends React.Component{
         userName:userName
       })
     }).done(()=>{
-      this.getThread
+      this.getThread()
     })
   }
   getThread(){

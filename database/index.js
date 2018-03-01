@@ -73,3 +73,9 @@ con.connect(function(err) {
        }
     })
   }
+  module.exports.newUserName = newUserName;
+  module.exports.postComment = postComment;
+  module.exports.getComment = getComment;
+  module.exports.postReply = postReply;
+  module.exports.getReply = getReply;
+  module.exports.selectUser =selectUser;
