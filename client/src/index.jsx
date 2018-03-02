@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import AddThread from './components/Thread.jsx';
-import Discussions from './components/Discussions.jsx';
+import AddThread from './components/AddThread.jsx';
+import ThreadList from './components/ThreadList.jsx';
 
 class App extends React.Component{
   constructor(props){
@@ -10,23 +10,25 @@ class App extends React.Component{
     this.state={
       thread: []
   }
+  this.addThread = this.addThread.bind(this);
+  this.getThread = this.getThread.bind(this);
 }
+
   addThread(comment,userName){
     $.ajax({
       method:'POST',
-      url:'/',
+      url:'/paisa',
       contentType: 'application/json',
       data:JSON.stringify({
-        comment:comment,
-        userName:userName
+        comment:comment
       })
     }).done(()=>{
-      this.getThread
+      this.getThread()
     })
   }
   getThread(){
     $.ajax({
-      url:'/',
+      url:'/paisa',
       method:"GET",
       success: (results) =>{
         this.setState({thread:results})
@@ -44,8 +46,10 @@ class App extends React.Component{
 
  render() {
     return (
-      <AddThread addThread= {this.addThread}/>
-
+      <div>
+      <AddThread addThread={this.addThread} />
+      <ThreadList thread={this.state.thread} />
+    </div>
     );
   }
 }
