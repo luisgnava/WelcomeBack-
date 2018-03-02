@@ -3,12 +3,12 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.json());
- app.use(express.static(__dirname + '/../src/components'));
+ app.use(express.static(__dirname + '/../client/dist'));
 
 //get request
 app.get(bodyParser.json());
 app.get('/', function(req, res){
-  res.send();
+  res.send('index.html');
 });
 
 

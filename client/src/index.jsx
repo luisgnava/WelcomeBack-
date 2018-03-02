@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import AddThread from './components/Thread.jsx';
-import Discussions from './components/Discussions.jsx';
+import Dbox from './components/aboutUs.jsx'
 
 class App extends React.Component{
   constructor(props){
@@ -43,9 +43,11 @@ class App extends React.Component{
 
 
  render() {
-    return (
-      <AddThread addThread= {this.addThread}/>
 
+   return ( <div>
+    <Contact />
+    <Dbox />
+    </div>
     );
   }
 }

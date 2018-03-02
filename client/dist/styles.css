@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Armata');
+
+body {
+  background-color: black;
+  background-attachment: fixed;
+  background-image: url('sunset2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 1000px;
+}
+
+h1 {
+  color: white;
+  position: fixed;
+  margin-top: 2em;
+  margin-left: 0.5em;
+  font-family: "Armata";
+}
+
+p {
+  color: white;
+  position: fixed;
+  margin: 150px;
+  margin-top: 10em;
+  font-family: "Armata";
+  font-size: 28px;
+}
