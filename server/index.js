@@ -4,8 +4,9 @@ var app = express();
 var data = require('../database/index.js');
 
 app.use(bodyParser.json());
- app.use(express.static(__dirname + '/../client/dist'));
+ app.use(express.static(__dirname + '/../src/components'));
 
+<<<<<<< 98b57f9aeda700f3095dce3abd7acfe128a2e9ed
 app.get('/paisa', function(req,res){
   data.getComment((err,results)=>{
 if(err){
@@ -34,7 +35,15 @@ app.post('/paisa', function(req,res){
   }
 })
 
+=======
+//get request
+app.get(bodyParser.json());
+app.get('/', function(req, res){
+  res.send();
+});
+>>>>>>> merged files conflict is no longer a conflict
 
-app.listen(3000, ()=>{
+
+app.listen(3000, () => {
   console.log('listening on 3000')
 })
