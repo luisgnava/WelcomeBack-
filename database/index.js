@@ -13,7 +13,7 @@ var con = mysql.createConnection({
 con.connect(function(err) {
   if (err) throw err
   console.log('You are now connected...')
-  }
+})
 
 
   //user
@@ -59,8 +59,8 @@ con.connect(function(err) {
      } else {
        console.log(results);
        cb(null, results);
-     }}
-  })
+     }
+})
 }
 
   var getReply = function(cb){
@@ -78,4 +78,3 @@ con.connect(function(err) {
   module.exports.getComment = getComment;
   module.exports.postReply = postReply;
   module.exports.getReply = getReply;
-  module.exports.selectUser =selectUser;

@@ -4,21 +4,11 @@ class AddThread extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-<<<<<<< HEAD
      comment:''
-
-   }
-   this.add = this.add.bind(this);
-   this.updateComment = this.updateComment.bind(this);
-
-=======
-     comment:'',
-     userName:''
    }
    this.add = this.add.bind(this);
    this.updateComment = this.updateComment.bind(this);
    this.updateUserName = this.updateUserName.bind(this);
->>>>>>> Working on index
 
   }
   updateComment(e){
@@ -26,15 +16,12 @@ class AddThread extends React.Component{
       comment:e.target.value
     })
   }
-<<<<<<< HEAD
 
-=======
   updateUserName(e){
     this.setState({
       userName:e.target.value
     })
   }
->>>>>>> Working on index
   add(){
     this.props.addThread(this.state.comment)
     this.setState({
